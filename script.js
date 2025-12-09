@@ -21,7 +21,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 });
 
-function setCookie(name, value, exdays) {
+function setAccountCookie(name, value, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); // Calculate expiration date
   const expires = "expires=" + d.toUTCString();

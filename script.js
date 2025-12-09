@@ -6,8 +6,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const messageElement = document.getElementById('message');
 
     // Simple client-side validation (for demonstration purposes)
-    const validUsername = 'user';
-    const validPassword = 'password';
+    const validUsername = 'Winnigames2024';
+    const validPassword = 'admin';
 
     if (usernameInput === validUsername && passwordInput === validPassword) {
         messageElement.textContent = 'Login successful! You'll need to log in again in 30 days!!!';

@@ -4,7 +4,10 @@ const UserName = document.getElementById("username");
 
 
 // Functions
-function InitalizeDashboard
+function InitalizeDashboard() {
+  const CurrentUserName = getCookie("username");
+  UserName.Text = CurrentUserName;
+}
 
 function getCookie(name) {
   const nameEQ = name + "=";

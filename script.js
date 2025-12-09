@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirect to another page or perform further actions
         setAccountCookie("username", usernameInput, 30);
         setAccountCookie("password", passwordInput, 30);
-        window.location.href = 'dashboard';
+        window.location.href = './dashboard';
     } else {
         messageElement.textContent = 'Invalid username or password.';
         messageElement.style.color = 'red';

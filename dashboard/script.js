@@ -1,7 +1,11 @@
- 
+WinniTools.TakeScreenShot("../screenshots/", );
+const UserName = document.getElementById("username");
+
 
 
 // Functions
+function InitalizeDashboard
+
 function getCookie(name) {
   const nameEQ = name + "=";
   const ca = document.cookie.split(';'); // Split the document.cookie string into an array of individual cookie strings

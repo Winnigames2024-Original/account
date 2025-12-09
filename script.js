@@ -1,5 +1,4 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
+document.getElementById('loginBtn').addEventListener('click', function(event) {
 
     const usernameInput = document.getElementById('username').value;
     const passwordInput = document.getElementById('password').value;

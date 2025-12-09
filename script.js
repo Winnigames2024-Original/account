@@ -10,7 +10,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const validPassword = 'admin';
 
     if (usernameInput === validUsername && passwordInput === validPassword) {
-        messageElement.textContent = 'Login successful! You'll need to log in again in 30 days!!!';
+        messageElement.textContent = 'Login successful! You need to log in again in 30 days!!!';
         messageElement.style.color = 'green';
         // Redirect to another page or perform further actions
         setAccountCookie("username", usernameInput, 30);

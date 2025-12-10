@@ -1,5 +1,6 @@
-const urlParams = new URLSearchParams(window.location.search);
-const user = urlParams.get('account');
+const urlPaframs = new URLSearchParams(window.location.search);
+const user = urlPaframs.get('account');
+const password = urlPaframs.get('password');
 const UserName = document.getElementById("h2Username");
 
 InitalizeDashboard();
@@ -20,7 +21,6 @@ const LiliyaIOVisibleUsername = 'Liliya Lonskaya %(*MODERATOR*)%';
 if (user) {
   // Winnigames2024 Account Checker
   if (user == validUsername) {
-    const password = urlParams.get('password');
     if (password) {
       if (password == validPassword) {
         UserName.Text = Winnigames2024VisibleUsername;
@@ -29,7 +29,6 @@ if (user) {
   }
   // Winnigames2024 Test Account Checker
   if (user == validTestUsername) {
-    const password = urlParams.get('password');
     if (password) {
       if (password == validTestPassword) {
         UserName.Text = TestAccountVisibleUsername;
@@ -38,7 +37,6 @@ if (user) {
   }
   // LiliyaIO Account Checker
   if (user == validLiliyaUsername) {
-    const password = urlParams.get('password');
     if (password) {
       if (password == validLiliyaPassword) {
         UserName.Text = LiliyaIOVisibleUsername;

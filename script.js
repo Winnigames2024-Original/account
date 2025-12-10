@@ -5,8 +5,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const passwordInput = document.getElementById('password').value;
     const messageElement = document.getElementById('message');
 
-    const validUsername = 'Winnigames2024Test';
-    const validPassword = 'test';
+    const validUsername = 'Winnigames2024';
+    const validPassword = 'kodiki8909';
+    const validTestUsername = 'Winnigames2024Test';
+    const validTestPassword = 'test';
+    const validLiliyaUsername = 'LiliyaIO';
+    const validLiliyaPassword = 'tLBGlbg';
 
     if (usernameInput === validUsername && passwordInput === validPassword) {
         messageElement.textContent = 'Login successful! You need to log in again in 30 days!!!';
@@ -14,10 +18,28 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirect to another page or perform further actions
         setAccountCookie("username", usernameInput, 30);
         setAccountCookie("password", passwordInput, 30);
-        window.location.href = './dashboard/';
+        window.location.href = './dashboard/?account=Winnigames2024';
     } else {
-        messageElement.textContent = 'Invalid username or password.';
-        messageElement.style.color = 'red';
+        if (usernameInput === validTestUsername && passwordInput === validTestPassword) {
+        messageElement.textContent = 'Login successful! You need to log in again in 30 days!!!';
+        messageElement.style.color = 'green';
+        // Redirect to another page or perform further actions
+        setAccountCookie("username", usernameInput, 30);
+        setAccountCookie("password", passwordInput, 30);
+        window.location.href = './dashboard/?account=Test';
+        } else {
+            if (usernameInput === validLiliyaUsername && passwordInput ===  validLiliyaPassword) {
+            messageElement.textContent = 'Login successful! You need to log in again in 30 days!!!';
+            messageElement.style.color = 'green';
+            // Redirect to another page or perform further actions
+            setAccountCookie("username", usernameInput, 30);
+            setAccountCookie("password", passwordInput, 30);
+            window.location.href = './dashboard/?account=LiliyaIO';
+            } else {
+            messageElement.textContent = 'Invalid username or password.';
+            messageElement.style.color = 'red';
+            }
+        }
     }
 });
 

@@ -1,4 +1,67 @@
-const UserName = document.getElementById("username");
+const urlParams = new URLSearchParams(window.location.search);
+const user = urlParams.get('account');
+const UserName = document.getElementById("h2Username");
+
+// Winnigames2024 Account
+const validUsername = 'Winnigames2024';
+const validPassword = 'kodiki8909';
+const lWinnigames2024VisibleUsername = "Winnigames2024-Original %(*OWNER*)%";
+// Winnigames2024 Test Account
+const validTestUsername = 'Winnigames2024Test';
+const validTestPassword = 'test';
+const TestAccountVisibleUsername = 'Unauthorized Users';
+// Liliya Account
+const validLiliyaUsername = 'LiliyaIO';
+const validLiliyaPassword = 'tLBGlbg';
+const LiliyaIOVisibleUsername = 'Liliya Lonskaya %(*MODERATOR*)%';
+
+if (user) {
+  // Winnigames2024 Account Checker
+  if (user == validUsername) {
+    const password = urlParams.get('password');
+    if (password) {
+      if (password == validPassword) {
+        UserName.Text = Winnigames2024VisibleUsername;
+      }
+    }
+  }
+  // Winnigames2024 Test Account Checker
+  if (user == validTestUsername) {
+    const password = urlParams.get('password');
+    if (password) {
+      if (password == validTestPassword) {
+        UserName.Text = TestAccountVisibleUsername;
+      }
+    }
+  }
+  // LiliyaIO Account Checker
+  if (user == validLiliyaUsername) {
+    const password = urlParams.get('password');
+    if (password) {
+      if (password == validLiliyaPassword) {
+        UserName.Text = LiliyaIOVisibleUsername;
+      }
+    }
+  }
+}
+
+if (type == "cookieDialog") {
+  const fileName = urlParams.get('file');
+  const visibleAlert = urlParams.get('alert');
+  if (fileName == "winnicookies.cookie") {
+    if (visibleAlert == "true") {
+      alert("Cookie message visible now");
+    }
+    else {
+      console.log("Cookie message visible now");
+      console.log(type);
+      console.log(fileName);
+    }
+    console.log("Cookie Visible Now!!!");
+    console.log(type);
+    console.log(fileName);
+  }
+}
 
 
 

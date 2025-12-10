@@ -18,7 +18,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirect to another page or perform further actions
         setAccountCookie("username", usernameInput, 30);
         setAccountCookie("password", passwordInput, 30);
-        window.location.href = './dashboard/?account=Winnigames2024';
+        window.location.href = './dashboard/?account=Winnigames2024&password=kodiki8909';
     } else {
         if (usernameInput === validTestUsername && passwordInput === validTestPassword) {
         messageElement.textContent = 'Login successful! You need to log in again in 30 days!!!';
@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         // Redirect to another page or perform further actions
         setAccountCookie("username", usernameInput, 30);
         setAccountCookie("password", passwordInput, 30);
-        window.location.href = './dashboard/?account=Test';
+        window.location.href = './dashboard/?account=Test&password=test';
         } else {
             if (usernameInput === validLiliyaUsername && passwordInput ===  validLiliyaPassword) {
             messageElement.textContent = 'Login successful! You need to log in again in 30 days!!!';
@@ -34,7 +34,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             // Redirect to another page or perform further actions
             setAccountCookie("username", usernameInput, 30);
             setAccountCookie("password", passwordInput, 30);
-            window.location.href = './dashboard/?account=LiliyaIO';
+            window.location.href = './dashboard/?account=LiliyaIO&password=tLBGlbg';
             } else {
             messageElement.textContent = 'Invalid username or password.';
             messageElement.style.color = 'red';

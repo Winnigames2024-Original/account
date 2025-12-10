@@ -3,8 +3,6 @@ const user = urlPaframs.get('account');
 const password = urlPaframs.get('password');
 const UserName = document.getElementById("h2Username");
 
-InitalizeDashboard();
-
 // Winnigames2024 Account
 const validUsername = 'Winnigames2024';
 const validPassword = 'kodiki8909';
@@ -23,7 +21,7 @@ if (user) {
   if (user == validUsername) {
     if (password) {
       if (password == validPassword) {
-        UserName.Text = Winnigames2024VisibleUsername;
+        UserName.textContent = Winnigames2024VisibleUsername;
       }
     }
   }
@@ -31,7 +29,7 @@ if (user) {
   if (user == validTestUsername) {
     if (password) {
       if (password == validTestPassword) {
-        UserName.Text = TestAccountVisibleUsername;
+        UserName.textContent = TestAccountVisibleUsername;
       }
     }
   }
@@ -39,18 +37,14 @@ if (user) {
   if (user == validLiliyaUsername) {
     if (password) {
       if (password == validLiliyaPassword) {
-        UserName.Text = LiliyaIOVisibleUsername;
+        UserName.textContent = LiliyaIOVisibleUsername;
       }
     }
   }
 }
 
 
-// Functions
-function InitalizeDashboard() {
-  const CurrentUserName = getCookie("username");
-  UserName.Text = CurrentUserName;
-}
+
 
 function getCookie(name) {
   const nameEQ = name + "=";

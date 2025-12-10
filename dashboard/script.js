@@ -24,6 +24,9 @@ if (user) {
         UserName.textContent = Winnigames2024VisibleUsername;
       }
     }
+    else {
+       UserName.textContent = Winnigames2024VisibleUsername;
+    }
   }
   // Winnigames2024 Test Account Checker
   if (user == validTestUsername) {
@@ -32,6 +35,9 @@ if (user) {
         UserName.textContent = TestAccountVisibleUsername;
       }
     }
+    else {
+       UserName.textContent = TestAccountVisibleUsername;
+    }
   }
   // LiliyaIO Account Checker
   if (user == validLiliyaUsername) {
@@ -39,6 +45,9 @@ if (user) {
       if (password == validLiliyaPassword) {
         UserName.textContent = LiliyaIOVisibleUsername;
       }
+    }
+    else {
+       UserName.textContent = LiliyaIOVisibleUsername;
     }
   }
 }

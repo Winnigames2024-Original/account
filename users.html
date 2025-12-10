@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winnigames2024-Original | Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .main-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            color: red;
+            margin-top: 10px;
+        }
+
+      /* Базовый класс для текста */
+.text-base {
+  font-size: 1rem; /* Обычно 16px */
+}
+
+/* Более крупный шрифт */
+.text-large {
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Для заголовков */
+.username {
+  font-size: 2rem; /* 32px */
+}
+
+/* Текст в пикселях */
+.text-custom {
+  font-size: 22px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h2 for="h2Username">Username: </h2>
+        <h3 id="h2Username">%(*UserName*)%</h3>
+        <form id="dashboardForm">
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <script src="users.js"></script>
+</body>
+</html>
